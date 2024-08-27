@@ -1,14 +1,13 @@
 //
-//  PopulationAppTests.swift
+//  ApiManagerTests.swift
 //  PopulationAppTests
 //
 //  Created by João Santos on 27/08/2024.
 //
 
 import XCTest
-@testable import PopulationApp
 
-final class PopulationAppTests: XCTestCase {
+final class ApiManagerTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
