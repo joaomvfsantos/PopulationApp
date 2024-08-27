@@ -10,12 +10,17 @@
 		E82639022C7E0375000B7AB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82639012C7E0375000B7AB5 /* AppDelegate.swift */; };
 		E82639042C7E0375000B7AB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82639032C7E0375000B7AB5 /* SceneDelegate.swift */; };
 		E82639062C7E0375000B7AB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82639052C7E0375000B7AB5 /* ViewController.swift */; };
-		E82639092C7E0375000B7AB5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E82639082C7E0375000B7AB5 /* Base */; };
 		E826390B2C7E0376000B7AB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E826390A2C7E0376000B7AB5 /* Assets.xcassets */; };
 		E826390E2C7E0376000B7AB5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E826390D2C7E0376000B7AB5 /* Base */; };
-		E82639192C7E0376000B7AB5 /* PopulationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82639182C7E0376000B7AB5 /* PopulationAppTests.swift */; };
 		E82639232C7E0376000B7AB5 /* PopulationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82639222C7E0376000B7AB5 /* PopulationAppUITests.swift */; };
 		E82639252C7E0376000B7AB5 /* PopulationAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82639242C7E0376000B7AB5 /* PopulationAppUITestsLaunchTests.swift */; };
+		E82639332C7E047D000B7AB5 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82639322C7E047D000B7AB5 /* ApiManager.swift */; };
+		E82639362C7E04CC000B7AB5 /* StateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82639352C7E04CC000B7AB5 /* StateData.swift */; };
+		E82639382C7E05A5000B7AB5 /* NationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82639372C7E05A5000B7AB5 /* NationData.swift */; };
+		E826393B2C7E07EF000B7AB5 /* PopulationTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E826393A2C7E07EF000B7AB5 /* PopulationTableView.swift */; };
+		E826393D2C7E11D5000B7AB5 /* PopulationChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E826393C2C7E11D5000B7AB5 /* PopulationChartView.swift */; };
+		E826393F2C7E1719000B7AB5 /* ApiManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E826393E2C7E1719000B7AB5 /* ApiManagerTests.swift */; };
+		E82639412C7E18AA000B7AB5 /* MockUrlProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82639402C7E18AA000B7AB5 /* MockUrlProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,15 +45,20 @@
 		E82639012C7E0375000B7AB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E82639032C7E0375000B7AB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E82639052C7E0375000B7AB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E82639082C7E0375000B7AB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E826390A2C7E0376000B7AB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E826390D2C7E0376000B7AB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E826390F2C7E0376000B7AB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E82639142C7E0376000B7AB5 /* PopulationAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopulationAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E82639182C7E0376000B7AB5 /* PopulationAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationAppTests.swift; sourceTree = "<group>"; };
 		E826391E2C7E0376000B7AB5 /* PopulationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopulationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E82639222C7E0376000B7AB5 /* PopulationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationAppUITests.swift; sourceTree = "<group>"; };
 		E82639242C7E0376000B7AB5 /* PopulationAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E82639322C7E047D000B7AB5 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		E82639352C7E04CC000B7AB5 /* StateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateData.swift; sourceTree = "<group>"; };
+		E82639372C7E05A5000B7AB5 /* NationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationData.swift; sourceTree = "<group>"; };
+		E826393A2C7E07EF000B7AB5 /* PopulationTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationTableView.swift; sourceTree = "<group>"; };
+		E826393C2C7E11D5000B7AB5 /* PopulationChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationChartView.swift; sourceTree = "<group>"; };
+		E826393E2C7E1719000B7AB5 /* ApiManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManagerTests.swift; sourceTree = "<group>"; };
+		E82639402C7E18AA000B7AB5 /* MockUrlProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUrlProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +109,11 @@
 		E82639002C7E0375000B7AB5 /* PopulationApp */ = {
 			isa = PBXGroup;
 			children = (
+				E82639392C7E07B1000B7AB5 /* SwiftUI */,
+				E82639312C7E0471000B7AB5 /* ApiManager */,
 				E82639012C7E0375000B7AB5 /* AppDelegate.swift */,
 				E82639032C7E0375000B7AB5 /* SceneDelegate.swift */,
 				E82639052C7E0375000B7AB5 /* ViewController.swift */,
-				E82639072C7E0375000B7AB5 /* Main.storyboard */,
 				E826390A2C7E0376000B7AB5 /* Assets.xcassets */,
 				E826390C2C7E0376000B7AB5 /* LaunchScreen.storyboard */,
 				E826390F2C7E0376000B7AB5 /* Info.plist */,
@@ -113,7 +124,8 @@
 		E82639172C7E0376000B7AB5 /* PopulationAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				E82639182C7E0376000B7AB5 /* PopulationAppTests.swift */,
+				E82639422C7E18BD000B7AB5 /* Utils */,
+				E826393E2C7E1719000B7AB5 /* ApiManagerTests.swift */,
 			);
 			path = PopulationAppTests;
 			sourceTree = "<group>";
@@ -125,6 +137,41 @@
 				E82639242C7E0376000B7AB5 /* PopulationAppUITestsLaunchTests.swift */,
 			);
 			path = PopulationAppUITests;
+			sourceTree = "<group>";
+		};
+		E82639312C7E0471000B7AB5 /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				E82639342C7E04A8000B7AB5 /* Models */,
+				E82639322C7E047D000B7AB5 /* ApiManager.swift */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		E82639342C7E04A8000B7AB5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E82639352C7E04CC000B7AB5 /* StateData.swift */,
+				E82639372C7E05A5000B7AB5 /* NationData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E82639392C7E07B1000B7AB5 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				E826393A2C7E07EF000B7AB5 /* PopulationTableView.swift */,
+				E826393C2C7E11D5000B7AB5 /* PopulationChartView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		E82639422C7E18BD000B7AB5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E82639402C7E18AA000B7AB5 /* MockUrlProtocol.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +280,6 @@
 			files = (
 				E826390B2C7E0376000B7AB5 /* Assets.xcassets in Resources */,
 				E826390E2C7E0376000B7AB5 /* Base in Resources */,
-				E82639092C7E0375000B7AB5 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +304,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E82639362C7E04CC000B7AB5 /* StateData.swift in Sources */,
+				E826393B2C7E07EF000B7AB5 /* PopulationTableView.swift in Sources */,
+				E82639332C7E047D000B7AB5 /* ApiManager.swift in Sources */,
+				E82639382C7E05A5000B7AB5 /* NationData.swift in Sources */,
+				E826393D2C7E11D5000B7AB5 /* PopulationChartView.swift in Sources */,
 				E82639062C7E0375000B7AB5 /* ViewController.swift in Sources */,
 				E82639022C7E0375000B7AB5 /* AppDelegate.swift in Sources */,
 				E82639042C7E0375000B7AB5 /* SceneDelegate.swift in Sources */,
@@ -268,7 +319,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E82639192C7E0376000B7AB5 /* PopulationAppTests.swift in Sources */,
+				E82639412C7E18AA000B7AB5 /* MockUrlProtocol.swift in Sources */,
+				E826393F2C7E1719000B7AB5 /* ApiManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +349,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E82639072C7E0375000B7AB5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E82639082C7E0375000B7AB5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E826390C2C7E0376000B7AB5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,7 +490,6 @@
 				INFOPLIST_FILE = PopulationApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -473,7 +516,6 @@
 				INFOPLIST_FILE = PopulationApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
