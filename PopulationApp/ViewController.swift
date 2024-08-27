@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     let nationChartData = PopulationChartData(items: [])
     let apiManager = ApiManager()
     var segmentView: UISegmentedControl!
+    let activityIndicator = UIActivityIndicatorView(style: .large)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +42,10 @@ class ViewController: UIViewController {
         self.nationChartWrapperView.isHidden = true
         self.view.addSubview(self.nationChartWrapperView)
         
+        self.activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        self.activityIndicator.hidesWhenStopped = true
+        self.view.addSubview(self.activityIndicator)
+        
         NSLayoutConstraint.activate([
             self.segmentView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 10),
             self.segmentView.centerXAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerXAnchor),
@@ -54,8 +59,13 @@ class ViewController: UIViewController {
             self.nationChartWrapperView.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor),
             self.nationChartWrapperView.rightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.rightAnchor),
             self.nationChartWrapperView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+            
+            self.activityIndicator.centerXAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerXAnchor),
+            self.activityIndicator.centerYAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerYAnchor)
         ])
         
+        
+        self.activityIndicator.startAnimating()
         Task {
             do {
                 // Problem: Here if the first function throws the second function will not be called
@@ -69,8 +79,13 @@ class ViewController: UIViewController {
                 // from the main thread
                 self.updateStatePopulationUI(stateData: stateData)
                 self.updateNationChartUI(nationData: nationData)
+                
             } catch {
                 self.displayErrorAlert(error: error)
+            }
+            
+            await MainActor.run {
+                self.activityIndicator.stopAnimating()
             }
         }
     }
